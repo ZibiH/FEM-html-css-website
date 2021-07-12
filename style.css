@@ -1,0 +1,119 @@
+:root {
+	--primary-color: hsl(171, 66%, 44%);
+	--secondary-color: hsl(233, 100%, 69%);
+	--primary-text-color: hsl(210, 10%, 33%);
+	--secondary-text-color: hsl(201, 11%, 66%);
+	--head-weight: 600;
+	--regular-wight: 400;
+	font-size: 18px;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	min-height: 100vh;
+	width: 100%;
+	overflow-x: hidden;
+	font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.header {
+	width: 100%;
+	background: url('./images/bg-header-mobile.png') center / cover no-repeat;
+	text-align: center;
+	padding-top: 7rem;
+}
+
+.main,
+.footer {
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.wrapper,
+.partners {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.header__title,
+.wrapper__title,
+.wrapper__subtitle {
+	color: var(--primary-text-color);
+	font-weight: var(--head-weight);
+}
+
+.header__title {
+	font-size: 1.6rem;
+	margin-top: 2.8rem;
+	margin-bottom: 1rem;
+}
+
+.wrapper__title {
+	font-size: 1.5rem;
+	margin-top: 5rem;
+	margin-bottom: 1rem;
+}
+
+.wrapper__subtitle {
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+	font-size: 1.4rem;
+	font-weight: var(--head-weight);
+}
+
+.wrapper__img {
+	width: 90%;
+	margin: 4rem auto 2rem;
+}
+
+.header__description,
+.wrapper__title-description,
+.wrapper__subtitle-description {
+	color: var(--secondary-text-color);
+	font-weight: var(--regular-weight);
+	line-height: 1.6;
+}
+
+.header__description {
+	width: 95%;
+	margin: 0 auto;
+	font-size: 0.9rem;
+}
+
+.header__cta {
+	display: flex;
+	flex-direction: column;
+	margin: 2rem auto;
+	width: 90%;
+}
+
+.btn {
+	padding: 1rem 0 0.6rem;
+	margin: 1rem;
+	color: #fff;
+	font-size: 1rem;
+	letter-spacing: 1px;
+	border: none;
+	border-radius: 32px;
+	cursor: pointer;
+}
+
+.btn--ios {
+	background-color: var(--primary-color);
+	box-shadow: 0 4px 2px var(--primary-color), 0 4px 2px rgba(0, 0, 0, 1);
+}
+
+.btn--mac {
+	background-color: var(--secondary-color);
+	box-shadow: 0 4px 2px var(--secondary-color), 0 4px 2px rgba(0, 0, 0, 1);
+}
