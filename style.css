@@ -34,7 +34,13 @@ body {
 	letter-spacing: 1px;
 	border: none;
 	border-radius: 32px;
+	outline: none;
 	cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+	opacity: 0.8;
 }
 
 .btn--ios {
@@ -186,9 +192,11 @@ body {
 .footer__nav-link {
 	text-decoration: none;
 	color: var(--primary-text-color);
+	outline: none;
 }
 
-.footer__nav-link:hover {
+.footer__nav-link:hover,
+.footer__nav-link:focus {
 	color: var(--primary-color);
 }
 
@@ -202,9 +210,11 @@ body {
 .footer__social-link {
 	text-decoration: none;
 	cursor: pointer;
+	outline: none;
 }
 
-.footer__social-link:hover .footer__social-icon path {
+.footer__social-link:hover .footer__social-icon path,
+.footer__social-link:focus .footer__social-icon path {
 	fill: var(--primary-color);
 }
 
