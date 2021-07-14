@@ -71,7 +71,7 @@ body {
 .wrapper,
 .partners {
 	display: flex;
-	width: 100%;
+	width: 95%;
 	max-width: 75rem;
 	flex-direction: column;
 	margin-top: 7rem;
@@ -159,8 +159,7 @@ body {
 }
 
 .partners__img {
-	width: 40%;
-	max-width: 10rem;
+	max-width: 12.5rem;
 	margin: 2rem auto;
 }
 
@@ -293,11 +292,11 @@ body {
 
 	.partners {
 		flex-direction: row;
+		align-items: center;
 	}
 
 	.partners__img {
-		width: 8%;
-		margin: 2rem auto;
+		margin: 0 auto;
 	}
 
 	.footer__wrapper {
